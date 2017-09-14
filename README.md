@@ -10,15 +10,15 @@
 
 ## Installation
   ```
-  npm install unified-app-crawler
+  npm install appstore-playstore-crawler-api
   ```
   then
   ```javascript
-  var unifiedCrawler = require('unified-app-crawler')
+  var api = require('appstore-playstore-crawler-api')
   ```
   or (ES6)
   ```javascript
-  import { unifiedCrawler } from 'unified-app-crawler'
+  import { api } from 'appstore-playstore-crawler-api'
   ```
 
 # The API structure
@@ -35,9 +35,9 @@
 
   For the Apple App Store
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
-  unifiedCrawler.apple.getSearchResult('Uber', 100)
+  api.apple.getSearchResult('Uber', 100)
     .then(result => console.log(result))
   ```
 
