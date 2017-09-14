@@ -92,9 +92,9 @@
   For the Google Play Store:
 
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
-  unifiedCrawler.google.getSearchResult('Uber', 100)
+  api.google.getSearchResult('Uber', 100)
     .then(result => console.log(result))
   ```
 
@@ -134,7 +134,7 @@
   For the Google Play Store:
 
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
   var searchOptions = {
     category: googleScraper.category.GAME,         
@@ -143,7 +143,7 @@
     country: 'us'
   }
 
-  unifiedCrawler.google.getEntireListOfCategory(searchOptions)
+  api.google.getEntireListOfCategory(searchOptions)
     .then(result => console.log(result))
   ```
 
@@ -179,7 +179,7 @@
   * `country`: Not required, and it defaults to `'us'`.
 
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
   var searchOptions = {
     collection: appleScraper.collection.TOP_FREE_IPAD,
@@ -187,7 +187,7 @@
     country: 'br'
   }
 
-  unifiedCrawler.apple.getEntireListOfCategory(searchOptions)
+  api.apple.getEntireListOfCategory(searchOptions)
     .then(result => console.log(result))
   ```
 
@@ -221,14 +221,14 @@
   * `country`: Not required, and it defaults to `'us'`.
 
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
   var searchOptions = {
     appId: 'com.nway.powerrangerslegacywars',
     country:'us'
   }
 
-  unifiedCrawler.google.getRanking(searchOptions)
+  api.google.getRanking(searchOptions)
     .then(result => console.log(result))
   ```
 
@@ -285,7 +285,7 @@
   *   ↳ `country` : Not required, and it defaults to `'us'`.
 
   ```javascript
-  var unifiedCrawler = require('google-play-scraper');
+  var api = require('appstore-playstore-crawler-api');
 
   var searchOptions = {
     id: 368677368,
@@ -295,7 +295,7 @@
     }
   }
 
-  unifiedCrawler.apple.getRanking(searchOptions)
+  api.apple.getRanking(searchOptions)
     .then(result => console.log(result))
   ```
 
